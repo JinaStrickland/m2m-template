@@ -16,7 +16,7 @@ class Hobby
 
     #Find which people like a certain hobby
     def find_all_people
-        all_pairs = Cohort_Hobby.all.select do |pair|
+        all_pairs = PersonHobby.all.select do |pair|
             pair.hobby == self
         end
         all_pairs.map do |pair|

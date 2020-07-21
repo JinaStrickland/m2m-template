@@ -1,8 +1,8 @@
-class Cohort_Hobby
+class PersonHobby
 
 @@all = []
 
-attr_accessor :person, :hobby
+attr_accessor :person, :hobby, :hours
 
 def initialize(person, hobby, hours)
     @person = person
